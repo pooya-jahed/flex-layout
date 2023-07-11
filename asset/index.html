@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-site</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .red {
+        background-color: rgba(155, 66, 15, 0.87);
+      }
+      .blue {
+        background-color: blue;
+      }
+      .gray {
+        background-color: rgb(102, 102, 102);
+      }
+      .yellow {
+        background-color: yellowgreen;
+      }
+      .img-res {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul {
+        height: 80px;
+        display: flex;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 0 40px;
+      }
+      nav ul a {
+        font-size: 24px;
+        color: aliceblue;
+      }
+      header {
+        max-height: 600px;
+        display: flex;
+        position: relative;
+      }
+
+      header h1 {
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        margin: 0 20px;
+        border-radius: 15px;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 40px auto;
+      }
+      .container aside {
+        flex: 25%;
+        /* background-color: chartreuse; */
+      }
+      .container main {
+        flex: 75%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .container main > div {
+        width: 42%;
+      }
+      .container main div img {
+        border-radius: 15px;
+      }
+      .container main div p {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 7px;
+        padding: 5px;
+      }
+      aside > div {
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 5px;
+      }
+      aside div p {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+      }
+      aside ul li {
+        padding: 6px 0px;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 978px) {
+        .container {
+          flex-direction: column;
+        }
+        .container aside p,
+        li {
+          text-align: center;
+        }
+        .container main > div {
+          width: 100%;
+        }
+        nav ul li {
+          margin: 0 26px;
+        }
+        nav ul a {
+          font-size: 20px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        nav ul li {
+          margin: 0 15px;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+        }
+        footer,
+        nav ul a {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 20px;
+        }
+        .container {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="red">
+      <ul>
+        <li><a href="">صفحه اصلی</a></li>
+        <li><a href="">محصولات</a></li>
+        <li><a href="">درباره ما</a></li>
+        <li><a href="">تماس با ما</a></li>
+      </ul>
+    </nav>
+    <header class="yellow">
+      <h1>طراحی وب خلاق با کریتیو</h1>
+      <img class="img-res" src="/img/background.jpg" alt="" />
+    </header>
+    <section class="container">
+      <aside>
+        <div>
+          <p>جدیدترین مطالب</p>
+          <ul>
+            <li><a href="">مطلب 1</a></li>
+            <li><a href="">مطلب 2</a></li>
+            <li><a href="">مطلب 3</a></li>
+            <li><a href="">مطلب 4</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>جدیدترین مطالب</p>
+          <ul>
+            <li><a href="">مطلب 1</a></li>
+            <li><a href="">مطلب 2</a></li>
+            <li><a href="">مطلب 3</a></li>
+            <li><a href="">مطلب 4</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>جدیدترین مطالب</p>
+          <ul>
+            <li><a href="">مطلب 1</a></li>
+            <li><a href="">مطلب 2</a></li>
+            <li><a href="">مطلب 3</a></li>
+            <li><a href="">مطلب 4</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <div>
+          <img class="img-res" src="/img/13.jpg" alt="" /><img src="" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+        <div>
+          <img class="img-res" src="/img/13.jpg" alt="" /><img src="" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+        <div>
+          <img class="img-res" src="/img/13.jpg" alt="" /><img src="" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+        <div>
+          <img class="img-res" src="/img/13.jpg" alt="" /><img src="" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+        <div>
+          <img class="img-res" src="/img/13.jpg" alt="" /><img src="" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+        <div>
+          <img class="img-res" src="/img/13.jpg" alt="" /><img src="" alt="" />
+          <p>دوره طراحی وب</p>
+        </div>
+      </main>
+    </section>
+    <footer class="red">
+      <p>تمامی حقوق محفوظ میباشد</p>
+    </footer>
+  </body>
+</html>

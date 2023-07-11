@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(/fonts/Vazir-Medium.eot) format("eot"),
+    url(/fonts/Vazir-Medium.woff) format("woff"),
+    url(/fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Vazir-Medium;
+}
+ul,
+li,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.img-res {
+  width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1200px;
+}
+.gray-color {
+  background-color: rgb(54, 54, 54);
+}
+.blue-color {
+  background-color: rgba(21, 138, 235, 0.788);
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
